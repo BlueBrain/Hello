@@ -9,7 +9,6 @@ project(Hello)
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMake
   ${CMAKE_SOURCE_DIR}/CMake/common)
 include(GitExternal)
-include(SubProject) # Read CMake/common/SubProject.cmake header
 # //! [Setup]
 
 # //! [Versioning]
@@ -24,6 +23,7 @@ set(HELLO_DESCRIPTION "Example project for the Blue Brain Project")
 set(COMMON_PROJECT_DOMAIN ch.epfl.bluebrain)
 include(Common)
 common_package(Boost REQUIRED COMPONENTS unit_test_framework program_options)
+common_package(zeq REQUIRED)
 common_package_post()
 # //! [Scripts]
 
