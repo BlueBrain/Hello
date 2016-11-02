@@ -15,6 +15,6 @@ Hello provides the following functionality:
   git clone https://github.com/BlueBrain/Hello.git
   mkdir Hello/build
   cd Hello/build
-  cmake ..
-  make
+  cmake -GNinja ..
+  ninja
 ```
