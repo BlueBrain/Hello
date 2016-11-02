@@ -128,10 +128,31 @@ which is similar to build_library:
 
 @include apps/rule/CMakeLists.txt
 
-## Unit tests
+## Unit tests and Continuous Integration
 
 Unit tests are very important. Therefore our extensive example has
 [100% test coverage](CoverageReport/index.html). Again, the unit tests
 configuration relies largely on a common cmake script:
 
 @include tests/CMakeLists.txt
+
+Please set up Travis and Jenkins CI for a new project, and protect the
+[master branch](https://github.com/BlueBrain/Hello/settings/branches)
+against direct pushes and merges in the presence of CI failures.
+
+### Travis
+
+Log in to [Travis](https://travis-ci.org/), hover over your user name in
+the top-right corner, select Accounts, select the Blue Brain Project,
+activate the new project. Update .travis.yml as needed
+
+### Jenkins
+
+Configure the web hooks as they are configured for
+[Hello](https://github.com/BlueBrain/Hello/settings/hooks). Add project
+in projects.json in
+[jjb-oss](ssh://bbpcode.epfl.ch/infra/jenkins/jjb-oss), trigger build
+for [viz.jjb](https://bbpcode.epfl.ch/ci/job/viz.jjb/) and check that
+the [oss.sync](https://bbpcode.epfl.ch/ci/job/infra.jjb.oss.sync/) plan
+got triggered and did run correctly. Add BuildBots as
+an [admin team](https://github.com/BlueBrain/Hello/settings/collaboration).
