@@ -1,36 +1,38 @@
-# find ./*[!(CMake)] -name \*.h -o -name \*.cpp -o -name \*.hpp -o -name \*.ipp -exec clang-format-3.5 -i {} \;
 ---
-# BasedOnStyle:  Google
+Language: Cpp
+Standard: Cpp11
 AccessModifierOffset: -4
 ConstructorInitializerIndentWidth: 4
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
 AlignEscapedNewlinesLeft: true
+AlignOperands: true
 AlignTrailingComments: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortIfStatementsOnASingleLine: true
 AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
 AlwaysBreakTemplateDeclarations: true
 AlwaysBreakBeforeMultilineStrings: true
 BreakBeforeBinaryOperators: false
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializersBeforeComma: false
 BinPackParameters: true
-ColumnLimit:     80
-ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
 DerivePointerBinding: true
 ExperimentalAutoDetectBinPacking: false
 IndentCaseLabels: false
 MaxEmptyLinesToKeep: 1
 NamespaceIndentation: None
-ObjCSpaceBeforeProtocolList: false
-PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakBeforeFirstCallParameter: 100
 PenaltyBreakComment: 60
 PenaltyBreakString: 1000
 PenaltyBreakFirstLessLess: 120
 PenaltyExcessCharacter: 1000000
 PenaltyReturnTypeOnItsOwnLine: 200
 PointerBindsToType: true
-SpacesBeforeTrailingComments: 2
-Cpp11BracedListStyle: true
+SpacesBeforeTrailingComments: 1
+Cpp11BracedListStyle: false
 Standard:        Auto
 IndentWidth:     4
 TabWidth:        4
@@ -38,11 +40,12 @@ UseTab:          Never
 BreakBeforeBraces: Allman # brace on new line
 IndentFunctionDeclarationAfterType: true
 SpacesInParentheses: true # '( ' style
-SpacesInAngles:  false
+SpacesInAngles: false
 SpaceInEmptyParentheses: false
 SpacesInCStyleCastParentheses: false
 SpaceAfterControlStatementKeyword: true
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: Never
 ContinuationIndentWidth: 4
+SortIncludes: true
 ...
