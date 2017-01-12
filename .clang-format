@@ -39,8 +39,9 @@ TabWidth:        4
 UseTab:          Never
 BreakBeforeBraces: Allman # brace on new line
 IndentFunctionDeclarationAfterType: true
-SpacesInParentheses: true # '( ' style
-SpacesInAngles: false # '<' style
+SpaceAfterTemplateKeyword: false
+SpacesInParentheses: false # '(' style
+SpacesInAngles: true # '< ' style
 SpaceInEmptyParentheses: false
 SpacesInCStyleCastParentheses: false
 SpaceAfterControlStatementKeyword: true
