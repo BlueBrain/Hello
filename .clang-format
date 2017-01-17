@@ -23,6 +23,7 @@ DerivePointerBinding: true
 ExperimentalAutoDetectBinPacking: false
 IndentCaseLabels: false
 MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
 NamespaceIndentation: None
 PenaltyBreakBeforeFirstCallParameter: 100
 PenaltyBreakComment: 60
@@ -32,21 +33,20 @@ PenaltyExcessCharacter: 1000000
 PenaltyReturnTypeOnItsOwnLine: 200
 PointerBindsToType: true
 SpacesBeforeTrailingComments: 1
-Cpp11BracedListStyle: false
+Cpp11BracedListStyle: true
 Standard:        Auto
 IndentWidth:     4
 TabWidth:        4
 UseTab:          Never
 BreakBeforeBraces: Allman # brace on new line
 IndentFunctionDeclarationAfterType: true
-SpaceAfterTemplateKeyword: false
 SpacesInParentheses: false # '(' style
-SpacesInAngles: true # '< ' style
+SpacesInAngles: false # '< ' style
 SpaceInEmptyParentheses: false
 SpacesInCStyleCastParentheses: false
 SpaceAfterControlStatementKeyword: true
 SpaceBeforeAssignmentOperators: true
-SpaceBeforeParens: Never
+SpaceBeforeParens: ControlStatements
 ContinuationIndentWidth: 4
 SortIncludes: true
 ...
