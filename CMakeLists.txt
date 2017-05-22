@@ -8,9 +8,10 @@ cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 project(Hello VERSION 1.0.0)
 set(Hello_VERSION_ABI 1)
 
-list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMake
-                              ${CMAKE_SOURCE_DIR}/CMake/common)
-include(GitExternal)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake/common)
+if(NOT EXISTS ${CMAKE_SOURCE_DIR}/CMake/common/Common.cmake)
+  message(FATAL_ERROR "CMake/common missing, run: git submodule update --init")
+endif()
 # //! [Setup]
 
 # //! [Scripts]
@@ -31,6 +32,8 @@ add_subdirectory(tests)
 # //! [Targets]
 
 # //! [Footer]
-include(CPackConfig)
+set(CPACK_PACKAGE_DESCRIPTION_FILE "${PROJECT_SOURCE_DIR}/README.md")
+set(HELLO_PACKAGE_DEB_DEPENDS "libboost-program-options-dev")
+include(CommonCPack)
 include(DoxygenRule)
 # //! [Footer]

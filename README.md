@@ -23,7 +23,7 @@ environments are tested:
 
 Building from source is as simple as:
 
-    git clone https://github.com/BlueBrain/Hello.git
+    git clone --recursive https://github.com/BlueBrain/Hello.git
     mkdir Hello/build
     cd Hello/build
     cmake -GNinja ..
