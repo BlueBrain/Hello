@@ -1,5 +1,5 @@
 
-/* Copyright (c) 2014, BBP/EPFL
+/* Copyright (c) 2014-2022 Blue Brain Project/EPFL
  *                     Stefan.Eilemann@epfl.ch
  *
  * This file is part of Hello (https://github.com/BlueBrain/Hello)

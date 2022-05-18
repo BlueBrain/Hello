@@ -1,5 +1,5 @@
 
-/* Copyright (c) 2013-2014, EPFL/Blue Brain Project
+/* Copyright (c) 2013-2022 Blue Brain Project/EPFL
  *                          Daniel Nachbaur <daniel.nachbaur@epfl.ch>
  */
 
