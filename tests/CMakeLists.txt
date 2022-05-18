@@ -1,4 +1,4 @@
-# Copyright (c) BBP/EPFL 2011-2014, Stefan.Eilemann@epfl.ch
+# Copyright (c) 2011-2022 Blue Brain Project/EPFL
 # Change this number when adding tests to force a CMake run: 1
 
 # Includes the install_files function below

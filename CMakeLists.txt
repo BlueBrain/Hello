@@ -1,4 +1,4 @@
-# Copyright (c) BBP/EPFL 2011-2015 Stefan.Eilemann@epfl.ch
+# Copyright (c) 2011-2022 Blue Brain Project/EPFL
 
 # Never mind the [] sections. They are only here for doxygen.
 # Remove them in your project.
